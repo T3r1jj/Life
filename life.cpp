@@ -456,7 +456,7 @@ int main(int argc, char *argv[]) {
         printf("Iterations = %d\n", iterations);
         printf("File name: %s\n", argv[4]);
         if (argv[5] == NULL) {
-            cout << "Enter anything as a 5th argument to enable snapshotting" << endl << endl;
+            cout << "Enter anything as a 5th argument to enable snapshotting" << endl;
         }
         cout << "Starting the game..." << endl << endl;
         Board board = Board(size, mpiRank, 1);

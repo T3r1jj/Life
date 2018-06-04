@@ -1,2 +1,4 @@
 /output*.txt
 cmake-build-debug/
+life
+.idea/
