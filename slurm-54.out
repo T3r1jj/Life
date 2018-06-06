@@ -1,0 +1,11 @@
+The Game of Life
+N = 40000
+Iterations = 10
+File name: input4000.txt
+Enter anything as a 5th argument to enable snapshotting
+Starting the game...
+
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 7 with PID 21493 on node n4 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+2 total processes killed (some possibly by mpiexec during cleanup)

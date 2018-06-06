@@ -1,0 +1,11 @@
+The Game of Life
+N = 40000
+Iterations = 50
+File name: input4000.txt
+Enter anything as a 5th argument to enable snapshotting
+Starting the game...
+
+Single thread 
+Time: 526.256
+mpiexec: Forwarding signal 18 to job
+slurmstepd: *** JOB 50 ON n17 CANCELLED AT 2018-06-06T11:14:56 ***
