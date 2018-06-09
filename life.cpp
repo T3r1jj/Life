@@ -56,7 +56,6 @@ protected:
 
     virtual void syncBorder() {};
 
-    virtual void barrier() {};
 };
 
 class RowBoard : public Board {
@@ -421,12 +420,13 @@ void runMultiThread(Board *board, int iterations, int threads, double serialTime
     for (int i = 0; i < iterations; i++) {
         board->nextRound();
     }
+    MPI_Barrier(MPI_COMM_WORLD);
     t2 = omp_get_wtime();
 
     if (board->getRank() == 0) {
         time = t2 - t1;
         speedUp = serialTime / time;
-        efficiency = speedUp / threads;
+        efficiency = speedUp / (threads * board->getNodes());
         printf("\n%s\n%d nodes * %d threads = %d threads \nTime: %.3f\nSpeedup: %f\nEfficiency: %f\n", label.c_str(),
                board->getNodes(), threads, threads * board->getNodes(), time, speedUp, efficiency);
     }

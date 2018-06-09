@@ -1,0 +1,21 @@
+The Game of Life
+N = 1000
+Iterations = 200
+File name: input1000.txt
+Enter anything as a 5th argument to enable snapshotting
+Starting the game...
+
+Single thread 
+Time: 1.465
+
+=ROW DECOMPOSITION=
+4 nodes * 8 threads = 32 threads 
+Time: 0.352
+Speedup: 4.160023
+Efficiency: 0.130001
+
+=BLK DECOMPOSITION=
+4 nodes * 8 threads = 32 threads 
+Time: 0.115
+Speedup: 12.724848
+Efficiency: 0.397652
